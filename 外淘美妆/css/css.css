@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{margin:0;padding:0;}
+.header{width:100%;height:40px;background:hsla(0,1%,78%,1.00);}
+	.header ul{margin:0 auto;margin-left:20%;}
+	.header ul li{float:left;list-style:none;margin-left:10%;line-height:40px;}
+	.header ul li a{text-decoration:none;color:black;text-shadow: 0 0 2px #000000;}
+	
+.search{width:100%;height:150px;background:white;}
+	.logo{width:10%;background:red;height:150px;margin-left:15%;float:left;}
+	.box{width:30%;background:transparent;height:60px;float:left;margin-top:45px;}
+	.box1{width:7%;background:pink;height:60px;float:left;margin-top:45px; 	}
+	input[type=text]{width:88%;height:56px; border:#FF0606 2px solid; font-size:30px; float:right;}
+	.box1 input[type=button]{width:100%;height:100%;background:hsla(359,60%,41%,1.00); font-size:medium;cursor:pointer;border:none;}
+	
+.poster{width:100%;height:600px;background:red;}
+	.posterl{width:100%;height:600px;background:blue;position:relative;z-index:1;}
+	.anniu{width:20%;height:600px;background:transparent;float:left;margin-top:-100px;margin-left:40%;position:relative;z-index:2;overflow:hidden;} 
+	.anniu ul{width:90%;height:200px;background:transparent;}
+	.anniu li{width:20%;height:20px;background:transparent;float:left;list-style:none;}
+	.anniu input{width:100%;border-radius:20px; cursor:pointer;}
+
+	.xiala{width:25%;height:600px;background:transpart;float:left;margin-top:-600px;position:relative;z-index:2;margin-left:-45%;}
+	.xiala ul{width:30%;background:transpart;}
+	.xiala li{list-style:none;font-size:20px;color:red;}
+	.xialakuai{width:20%;height:600px;background:transparent;margin-top:-600px;margin-left: 20%;
+	position: relative;z-index: 2;}
+	.xiala-shopping{width:100%;height:inherit;background:red;display: none;}
+	.xiala-feman{width:100%;height:inherit;background:yellow;display:none;}
+	.xiala-man{width:100%;height:inherit;background:blue;display:none;}
+	.xiala-shopping{width:100%;height:inherit;background:gold;display:none;}
+	.xiala-zyin{width:100%;height:inherit;background:black;display:none;}
+	.xiala-one{width:100%;height:inherit;background:pink;display:none;}
+	.xiala-two{width:100%;height:inherit;background:blueviolet;display:none;}
+	.xiala-three{width:100%;height:inherit;background:gray;display:none;}
+	.xiala-four{width:100%;height:inherit;background:blue;display:none;}
+	
+.duty{width:100%;height:500px;background:pink;}
+.end{width:100%;height:400px;background:black;}

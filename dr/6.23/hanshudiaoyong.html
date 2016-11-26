@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+
+
+</body>
+ <!--function 函数名（参数）{
+需要执行的代码
+}-->
+<script>
+/* 函数只定义并不会执行，需要调用才能执行
+函数可以重复调用（可以偷懒，节省事件）
+函数定义不能重名，如果重名，后一个函数会把前一个函数覆盖掉
+函数没有定义，就调用，会报错
+函数在哪里定义不重要，重要的是哪里调用。/*show();function show(){ alert('1')}*/
+
+
+	/*function show(){
+	alert('1')}
+	show();*/
+	function show2(){function show(){alert('2');}
+	alert('1');}
+	show2();
+</script>
+</html>

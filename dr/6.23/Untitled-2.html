@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#div1{width:100px;height:100px;background:red;}
+</style>
+
+</head>
+
+<body>
+<!-- 
+java与javascript是不一样的
+javascript就是在修改css，从初学者的最初的看法
+什么是事件：用户的操作 比如说 点击
+alert（）是弹出框 等待用户确认 代码调试用的
+任何元素都可以添加事件
+任何css都可以修改
+html和css怎么改，js也怎么改
+function 函数 
+-->
+
+	<div id="div1" onclick="alert('Hell World')">
+    </div>
+</body>
+<script>
+	/*创建 变量名 文档 的 获取  元素  通过 ID*/
+	var oDiv=document.getElementById('div1');
+	//alert(oDiv);//
+	oDiv.onclick=function (){
+		//alert('这是一个div');//
+		oDiv.style.background='green';
+		oDiv.style.width='400px';
+		this.style.height='400px';
+		oDiv.style.transition='all 1s ease-in';
+		
+	};
+	oDiv.onmouseover=function(){
+		oDiv.style.background='yellow';
+		oDiv.style.height='800px';
+		
+	}
+	oDiv.onmouseout=function(){
+		oDiv.style.background='black';
+		oDiv.style.width='500px';
+		
+		
+	}
+</script>
+</html>

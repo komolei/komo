@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;
+padding:0;}
+.header{width:100%;height:44px;background:#111111;line-height:44px;max-winth:1600px;opacity:1;}
+
+.con{width:1000px;margin:0 auto;height:20px;background:balck;}
+
+.header ul{margin:o auto;}
+.header ul li{float:left;margin:0 3%;list-style:none;margin-right:50px;opacity:.99;}
+.header ul li:hover{opacity:0.3;transition:all 0.7s linear;}
+.header ul li a{color:#fff;text-decoration:none;font-family:"Myriad Pro";font-size:14px;font-weight:150;}
+/*.header ul li a:link{color:#fff;}
+
+.header ul li a:hover{color:red;}
+.header ul li a:active{background:gold;}*/
+
+.header .logo{	display:inline-block;
+				width:20px;
+				height:44px;
+				background:url("http://www.apple.com/ac/globalnav/2.0/zh_CN/images/ac-globalnav/globalnav/apple/image_large.svg") no-repeat center
+				}
+.header .logo:hover{
+				
+				}
+.header .search{
+				display:inline-block;	
+				width:20px;
+				height:44px;
+				background:url("http://www.apple.com/ac/globalnav/2.0/zh_CN/images/ac-globalnav/globalnav/search/image_large.svg") no-repeat center
+				}
+.header .shoppingcar{
+				display:inline-block;
+				width:20px;
+				height:44px;
+				background:url("http://www.apple.com/ac/globalnav/2.0/zh_CN/images/ac-globalnav/globalnav/bag/image_large.svg") no-repeat }
+.poster{height:750px;width:100%;
+		}
+.poster ul{list-style:none;transition:all 1s ease-in;}
+.poster ul li{display:inline-block;float:left;margin:0 auto;height:250px;width:25%;background:red;overflow:hidden ;}
+.poster ul li a{text-decoration:none;}
+img{transition:all 2s ease-in;}
+img:hover{height:500px;}
+.gd{
+width:10px;
+height:100px;position:absolute;color:#999999;padding:0px;-webkit-transition:width 1s;}
+.gd:focus{width:500px;}

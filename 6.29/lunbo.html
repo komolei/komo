@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+
+	.banner{width:1900px;height:1000px;background:black;position:absolte;z-index:-2;}
+	img{width:1900px;height:1000px;position:absolute:z-index:-1;}
+	.anniu{width:900px;height:40px;background:red;margin:0 auto;/*position:relative;z-index:20;这句话可以不加的，不加则网页就不会显示去红色的区域，这个被ul给遮盖掉了*/margin-top:-100px;}
+	.anniu ul{margin:0 auto;width:200px;margin-top:0px;position:relative;z-index:1;}
+	.anniu li{float:left;list-style:none;}
+	
+	.aa1 ,.aa2,.aa3,.aa4{border-radius:42px;width:40px;height:40px;background:black;display:block;
+	cursor:pointer;}
+	
+</style>
+<script>
+window.onload=function()
+{
+	
+	var a=document.getElementsByTagName('input');
+	var b=document.getElementById('banner1').getElementsByTagName("div");
+	
+	for(var i=0;i<a.length;i++)
+	{
+		a[i].index=i;
+		a[i].onclick=function()
+			{
+				for(var i=0;i<a.length;i++)
+					{ 
+						a[i].style.background='black'
+					}
+			 	for(var i=0;i<4;i++)
+					{
+						b[i].style.display='none';
+					}
+		this.style.background='yellow';
+		b[this.index].style.display='block';	
+			}
+	}
+}
+
+
+</script>
+</head>
+
+<body>
+    <div class="banner"  id="banner1">	
+        <div  style="display:block"><img src="280039.jpg" alt="1"/></div>
+        <div  style="display:none"><img src="280042.jpg" alt="2"/></div>
+        <div  style="display:none"><img src="280044.jpg" alt="3"/></div>
+        <div  style="display:none"><img src="280301.jpg" alt="4"/></div>
+        
+    </div >
+    <div class="anniu">
+        <ul>
+            <li><div class="a1" ><input type="button" class="aa1"/></div></li>
+            <li><div class="a2" ><input type="button" class="aa2"/></div></li>
+            <li><div class="a3" ><input type="button" class="aa3"/></div></li>
+            <li><div class="a4" ><input type="button" class="aa4"/></div></li>
+        </ul>
+    </div>
+</body>
+</html>

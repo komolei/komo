@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+div{width:110px;height:200px;margin:4px;display:none;background:gold}
+</style>
+<script>
+
+/* of underfined 下标有误 
+not defined 未定义
+
+*/
+window.onload=function()
+{
+	var a=document.getElementsByTagName('input');
+	var b=document.getElementsByTagName('div')
+	for(var i=0;i<a.length;i++)
+	{ 	a[i].index=i;/*index 编号 就是发索引  添加编号*/
+		a[i].onclick=function()
+		//干掉所有，点亮自己
+		{
+			for(var i=0;i<a.length;i++)
+				{
+				a[i].style.background="gray";
+				 }
+			for( var i=0;i<a.length;i++)
+				{
+				b[i].style.display='none';
+				}	
+		this.style.background='red';//修改当前卡头
+		b[this.index].style.display='block'; //修改卡头相对于的卡体
+		}
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" value="图片" />
+<input type="button" value="视频" />
+<input type="button" value="新闻" />
+<div style="display:block" value="12">1de div</div>
+<div style="display:none" value="22">2de div</div>
+<div style="display:none" value="32">3de div</div>
+</body>
+</html>

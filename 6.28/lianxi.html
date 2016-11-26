@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>gundong</title>
+<style>
+div{width:100px;height:200px;background:red;margin:0;}
+input{width:50px;height:50px;background:black;margin:0;padding:0;margin-right:-17px;border-radius:50px;opacity:.5;}
+</style>
+<script>
+	window.onload=function()
+{
+	 
+var a=document.getElementsByTagName('input');
+var b=document.getElementsByTagName('div');
+
+	for(var i=0;i<a.length;i++)
+	{	a[i].index=i; 
+		a[i].onclick=function()
+		{
+			for(var i=0;i<a.length;i++)
+		    {
+			a[i].style.background='black';
+			}
+			for(var i=0;i<a.length;i++)
+			{
+			b[i].style.display='none';
+			}
+			this.style.background='gold';
+			b[this.index].style.display='block';
+		}
+	}	
+}
+</script>
+</head>
+
+<body>
+
+    <input type="button" align="center"/>
+    <input type="button" />
+    <input type="button" />
+
+
+    <div style="display:block" ><img src="001.jpg" alt="1"/></div>
+    <div style="display:none"><img src="002.jpg" alt="13" /></div>
+    <div style="display:none"><img src="003.jpg" alt="12"/></div>
+
+</body>
+</html>

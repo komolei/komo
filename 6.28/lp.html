@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+.bu{width:1900px;height:40px;background:white;}
+.ph{width:1900px;height:900px;background:black;}
+.bu ul{margin-left:750px; }
+.bu ul li{list-style:none;float:left;}
+.bu input{width:100px;height:40px;background:green;border-radius:40px;}
+.ph ul{width:1900px;height:900px;background:red;}
+.ph ul ol{list-style:none;width:1900px;background:blue;margin-top:1px;}
+</style>
+<script>
+window.onload=function()
+{
+	var a=document.getElementsByTagName('input');
+	var b=document.getElementsByTagName('ol')
+	
+	for(var i=0;i<a.length;i++ )
+		{   
+			a[i].index=i;	
+			a[i].onclick=function()
+			{
+				for(var i=0;i<b.length;i++)
+					{  
+				
+					b[i].style.display='none';
+					}
+			b[this.index].style.display='block';
+					
+			}
+		}
+}
+</script>
+</head>
+
+<body>
+    <div class="bu">
+         <ul>
+            <li><input type="button" /></li>
+            <li><input type="button" /></li>
+            <li><input type="button" /></li>
+            <li><input type="button" /></li>
+         </ul>
+    </div>
+<div class="ph">
+	<ul>
+    	<ol style="display:block" ><img src="003.jpg" alt="003"/></ol>
+        <ol style="display:none"><img src="001.jpg" alt="1"/></ol>
+        <ol style="display:none"><img src="002.jpg" alt="2"/></ol>
+      
+    </ul>
+
+</div>
+</body>
+</html>
